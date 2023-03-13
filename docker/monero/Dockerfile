@@ -9,6 +9,9 @@ COPY monero-linux-x64-v0.18.2.0.tar.bz2 .
 RUN tar -xvf monero-linux-x64-v0.18.2.0.tar.bz2
 RUN mv -v monero-x86_64-linux-gnu-v0.18.2.0/* .
 
+RUN pwd
+RUN ls -la
+
 WORKDIR /var/monero
 VOLUME /var/monero
 
