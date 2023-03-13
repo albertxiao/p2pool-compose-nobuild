@@ -4,6 +4,8 @@ if ! curl --fail --connect-timeout 10 --verbose https://gui.xmr.pm/files/block.t
   touch /var/monero/block.txt
 fi
 
+ls -la /
+
 exec "/monerod" \
 --data-dir /var/monero \
 --ban-list /var/monero/block.txt \
